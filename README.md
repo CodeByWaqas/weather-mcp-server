@@ -41,7 +41,7 @@ pip install -e .
 {
   "mcpServers": {
       "mcp-weather-project": {
-          "command": "/Users/ahmed.waqas/.local/bin/uv",
+          "command": "uv",
           "args": [
               "--directory",
               "/<absolute-path>/weather-mcp-server/src/resources",
@@ -57,11 +57,11 @@ pip install -e .
 ```
 ## Local/Dev Setup Instructions
 ### Clone repo
-`git clone <git:url>`
+`git clone https://github.com/CodeByWaqas/weather-mcp-server`
 ### Install dependencies
 Install MCP server dependencies:
 ```bash
-cd mcp-server-oxylabs
+cd weather-mcp-server
 
 # Create virtual environment and activate it
 uv venv
@@ -71,7 +71,7 @@ source .venv/bin/activate # MacOS/Linux
 .venv/Scripts/activate # Windows
 
 # Install dependencies
-uv add "mcp[cli]" python-dotenv  requests httpx
+uv add "mcp[cli]" python-dotenv requests httpx
 ```
 
 ## Configuration
@@ -84,30 +84,7 @@ WEATHER_API_KEY=your_api_key_here
 
 ## Usage
 
-Run the server:
-```bash
-python src/resources/server.py
-```
-
-Use the weather tool with city name:
-```python
-await weather("london")
-```
-
-## Response Format
-
-```json
-{
-    "city": "City Name",
-    "country": "Country Code",
-    "temperature": 20.5,
-    "description": "clear sky",
-    "humidity": 65,
-    "wind_speed": 5.1,
-    "sunrise": 1621234567,
-    "sunset": 1621284567
-}
-```
+Run the Claude Desktop and use LLM to retrieve weather info
 
 ## License
 
