@@ -1,5 +1,7 @@
 # Weather MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@CodeByWaqas/weather-mcp-server)](https://smithery.ai/server/@CodeByWaqas/weather-mcp-server)
+
 A Modern Code Protocol (MCP) server that provides weather information using the OpenWeatherMap API.
 
 ## Features
@@ -20,6 +22,15 @@ A Modern Code Protocol (MCP) server that provides weather information using the 
 
 ## Installation
 
+### Installing via Smithery
+
+To install Weather MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@CodeByWaqas/weather-mcp-server):
+
+```bash
+npx -y @smithery/cli install @CodeByWaqas/weather-mcp-server --client claude
+```
+
+### Manual Installation
 1. Clone the repository
 2. Create a virtual environment:
 ```bash
